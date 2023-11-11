@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C75126F-6EF3-4295-A952-FCC2EC7E866C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp4</RootNamespace>
+    <AssemblyName>WindowsFormsApp4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>packages\Oracle.ManagedDataAccess.21.8.0\lib\net462\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.6.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Function.cs" />
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="socket_server.cs" />
+    <Compile Include="ucPanel\ucScreen1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucScreen1.Designer.cs">
+      <DependentUpon>ucScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPanel\ucScreen2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucScreen2.Designer.cs">
+      <DependentUpon>ucScreen2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPanel\ucScreen3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucScreen3.Designer.cs">
+      <DependentUpon>ucScreen3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPanel\ucScreen4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucScreen4.Designer.cs">
+      <DependentUpon>ucScreen4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPanel\ucScreenHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPanel\ucScreenHome.Designer.cs">
+      <DependentUpon>ucScreenHome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPanel\ucScreen1.resx">
+      <DependentUpon>ucScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPanel\ucScreen2.resx">
+      <DependentUpon>ucScreen2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPanel\ucScreen3.resx">
+      <DependentUpon>ucScreen3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPanel\ucScreen4.resx">
+      <DependentUpon>ucScreen4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPanel\ucScreenHome.resx">
+      <DependentUpon>ucScreenHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-font-computer-3917446.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-cogwheel-2499195.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-ecg-monitor-5199552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-down-arrow-7860593.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\홈버튼 이미지.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\회사 로고.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-caution-4539472.png" />
+    <None Include="Resources\free-icon-motherboard-7259440.png" />
+    <None Include="Resources\free-icon-robotic-arm-8019037.png" />
+    <None Include="Resources\free-icon-statistics-8367611.png" />
+    <None Include="Resources\free-icon-404-error-5975189.png" />
+    <None Include="Resources\free-icon-stop-bullying-2452756.png" />
+    <None Include="Resources\free-icon-reload-5255398.png" />
+    <None Include="Resources\free-icon-reload-7324616.png" />
+    <None Include="Resources\free-icon-reload-7324616 %281%29.png" />
+    <None Include="Resources\free-icon-checking-4691580.png" />
+    <None Include="Resources\free-icon-computer-8281294.png" />
+    <Content Include="Resources\free-icon-tv-monitor-4018796.png" />
+    <None Include="Resources\이동중.png" />
+    <None Include="Resources\이동중3.png" />
+    <None Include="Resources\이동중2.png" />
+    <None Include="Resources\화살표2.png" />
+    <None Include="Resources\화살표.PNG" />
+    <None Include="Resources\화살표.bmp" />
+    <None Include="Resources\불량1.png" />
+    <None Include="Resources\불량2.png" />
+    <None Include="Resources\양품.png" />
+    <None Include="Resources\pib_24ON.png" />
+    <None Include="Resources\pib_24WARING.png" />
+    <None Include="Resources\pib_27WARING.png" />
+    <None Include="Resources\pib_32WARING.png" />
+    <None Include="Resources\pib_27ON.png" />
+    <None Include="Resources\pib_32ON.png" />
+    <None Include="Resources\pib_24ON.gif" />
+    <None Include="Resources\pib_27ON.gif" />
+    <None Include="Resources\pib_32ON.gif" />
+    <Content Include="Resources\화살표3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.Text.Json.6.0.0\build\System.Text.Json.targets'))" />
+  </Target>
+</Project>
