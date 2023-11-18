@@ -13,6 +13,9 @@ class ServerComm :
     def ready(self) :
         self.conn.request( 'GET', '/api/state' )
         result = self.conn.getresponse().read().decode()
+        json_object = json.loads( result )
+        msg = json_object[ 'msg' ]
+        statusCode = json_object[ 'statusCode' ]
         print( "ready : " + result )
         
         return result
