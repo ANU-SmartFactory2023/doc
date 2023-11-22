@@ -1,27 +1,30 @@
 
-import http.client, urllib.parse
+import http.client , urllib.parse
 import json
+import requests
 
-form_data = dict(name='test',password='1234')
+# 이름과 비밀번호 속성을 가진 TestModel 클래스 정의
+class TestModel:
+    name: str
+    password: str
 
-class TestModel :
-    name:str
-    password:str
-    
+# TestModel 인스턴스 생성하고 속성 설정
 testModel = TestModel()
 testModel.name = "test"
 testModel.password = "1234"
 
 
-conn = http.client.HTTPConnection( 'localhost', 5294 )
+# testModel 속성을 JSON 문자열로 변환
+params = json.dumps(testModel.__dict__)
+headers = {"Content-type": "application/json", "Accept": "*/*"}
 
-params = json.dumps( testModel.__dict__ )
-headers = {"Content-type": "application/json",
-           "Accept": "*/*"}
-
-conn.request( 'POST', '/api/values/value3', params, headers  )
-print( "value3 : " + conn.getresponse().read().decode() )
-
+# requests 모듈을 사용하여 POST 요청 보내기
+try:
+    response = requests.post('http://localhost:5294/api/values/value3', data=params, headers=headers)
+    response.raise_for_status()  # HTTP 오류 확인
+    print("응답:", response.text)
+except requests.exceptions.RequestException as e:
+    print(f"RequestException: {e}")
 
 
 
