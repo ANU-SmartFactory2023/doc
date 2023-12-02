@@ -9,6 +9,7 @@ class ServerComm :
     
     def __init__( self ) :
         self.conn = http.client.HTTPConnection( 'localhost', 5294 )
+        self.conn.timeout = 3
     
     def ready(self) :
         self.conn.request( 'GET', '/api/state' )
