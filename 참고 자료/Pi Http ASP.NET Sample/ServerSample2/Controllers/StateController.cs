@@ -6,12 +6,12 @@ using System.Text.Json.Serialization;
 
 namespace ServerSample2.Controllers
 {
-	[Route( "api/[controller]" )]
+	[Route( "pi/[controller]" )]
 	[ApiController]
 	public class StateController : ControllerBase
 	{
-		[HttpGet]
-		public string getState()
+		[HttpGet( "{id}" ) ]
+		public string getState( int id )
 		{
 			StateModel s = new StateModel();
 			s.msg = "OK";
