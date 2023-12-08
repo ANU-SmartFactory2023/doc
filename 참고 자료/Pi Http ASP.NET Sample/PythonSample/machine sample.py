@@ -1,7 +1,7 @@
 
 from enum import Enum
 import time
-from models import Process
+from models import ProcessModel
 from sensor import Sensor
 from server_communication import ServerComm
 from wafer_maker import WaferMaker
@@ -44,10 +44,10 @@ while running:
             print( Step.make_wafer )
             result = wafer_maker.making()
             
-            p = Process()
-            p.name = "Wafer make"
-            p.value = result
-            server_comm.send_data( p )
+            p = ProcessModel()
+            p.processName = "Wafer make"
+            p.processValue = result
+            #server_comm.send_data( p )
             
             currnet_step = Step.end
                 

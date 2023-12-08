@@ -1,5 +1,10 @@
 #process.py
 
-class Process:
-    name:str
-    value:int
+class SensorModel:
+    sensorName:str
+    sensorState:str
+
+class ProcessModel:
+    processCmd:str
+    processName:str
+    processValue:str

@@ -1,9 +1,11 @@
 import sys, os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
-from common import sensor
+from common.sensor import Sensor
 
-sensor.sensor_value = 10
+Sensor.sensor_value = 10
 
-print( sensor.sensor_value )
+print( Sensor.sensor_value )
+
+Sensor.get_ultra()
 
